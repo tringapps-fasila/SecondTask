@@ -1,0 +1,187 @@
+.card{
+    box-shadow:4px 4px 8px 4px rgb(206, 19, 19);
+    width:400px;
+    height: 300px;
+    background-color:rgba(6, 87, 56, 0.705);
+    margin-left: auto;
+    margin-top: 10px;
+    float: left;
+ 
+} 
+input[type="text"][name="FirstName"]{
+    margin-left: 28px;
+}
+input[type="text"][name="LastName"]{
+    margin-left: 32px;
+}
+input[type="date"][name="dob"]{
+    margin-left: 90px;
+}
+label{
+    margin-left: 15px;
+  
+}
+input[type="email"][name="mail"]{
+    margin-left: 70px;
+}
+input[type="radio"]{
+    margin-left: 60px ;
+}
+
+input[type="checkbox"]{
+    margin-left:12px;
+}
+button
+{
+    margin-left:10px;
+    margin-bottom: 5px;
+}
+table{
+    width:50%;
+    border-collapse: collapse;
+    float: left;
+    margin-top:50px;
+    margin-left: 30px;
+    background-color:#83c7ee;
+    border: 1px solid #cdcdcd;
+     
+}
+th,td{
+    border: 1px solid #cdcdcd;
+    padding:2px;
+    color: #070707;
+     
+} 
+
+
+@media screen and (max-width: 1100px){
+     .card{
+        box-shadow:4px 4px 8px 4px rgb(206, 19, 19);
+        width:auto;
+        height: auto;
+        background-color:rgba(6, 87, 56, 0.705);
+        margin-left: 2%;
+        margin-top: 5px;
+        float: left;
+     }
+ }
+ @media  screen and (max-width:330px){
+     input[type="text"][name="FirstName"]{
+        margin-left: 20px;
+    }
+    input[type="text"][name="LastName"]{
+        margin-left: 20px;
+    }
+    input[type="date"][name="dob"]{
+        margin-left: 10px;
+    }
+    label{
+        margin-left: 15px;
+      
+    }
+    input[type="email"][name="mail"]{
+        margin-left: 20px;
+    }
+    input[type="text"][name="phone"]{
+        margin-left: 25px;
+    }
+    input[type="radio"]{
+        margin-left: 43px;
+    }
+    
+    input[type="checkbox"]{
+        margin-left:12px;
+    }
+    button
+    {
+        margin-left:10px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width:760px),(min-device-width: 768px) and(max-device-width:1024px){
+    table,thead,tbody,th,td,tr{
+        display: block;
+    }    
+    th{
+        background: #c5c5c5;
+    }
+    table{
+        border-collapse: collapse;
+        border: 1px solid #cdcdcd;
+        width:100%;
+        margin-left: auto;
+    }
+    th,td{
+        border: 1px solid #cdcdcd;padding: 2px;
+    }
+}
+@media screen and (max-width:760px),(min-device-width: 768px) and(max-device-width:1024px) {
+    table,thead,tbody,th,td,tr{
+        display: block;
+    }  
+
+    thead th{
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+        
+    }
+    tr{border-bottom: 1px solid black;}
+    td{
+        border: none;
+        border-bottom: 1 px solid black;
+        position: relative;
+        padding-left: 50%;
+    }
+    td:before
+    {
+        position: absolute;
+        top:3px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+
+    }
+    td:nth-of-type(1):before{
+        content: "ID";
+    }
+    td:nth-of-type(2):before{
+        content:"Email";
+    }
+    td:nth-of-type(3):before{
+        content: "FirstName";
+    }
+    td:nth-of-type(4):before{
+        content: "LastName";
+    }
+    td:nth-of-type(5):before{
+        content: "PhoneNumber";
+    }
+    td:nth-of-type(6):before{
+        content: "Dob";
+    }
+    td:nth-of-type(7):before{
+        content: "Gender";
+    }
+    td:nth-of-type(8):before{
+        content: "Action";
+    }
+}
+@media screen and (min-device-width: 320px) and(max-device-width:480px) {
+    body{
+        padding: 0;
+        margin: 0;
+        width: 320px;
+
+    }
+    
+}
+@media screen and (min-device-width: 768px) and(max-device-width:1024px) {
+    body{
+        width: 495px;
+        
+    }
+    
+}
